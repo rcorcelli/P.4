@@ -1,0 +1,155 @@
+
+.div_restaurant_profile_photo
+{
+    width: 100%;
+}
+.div_restaurant_profile_photo img
+{
+    object-fit: cover;
+    width: 100%;
+    height: 220px;
+}
+main
+{
+    background-color: #f7f7f7;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1024px;
+    margin: 0 auto;
+}
+.restaurant_title
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 17px;
+    padding-right: 17px;
+    font-style: italic;
+    gap: 24px;
+}
+.restaurant_title i
+{
+    align-self: center;
+}
+.menu_SDD
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    vertical-align: middle;
+    padding-left: 13px;
+    padding-right: 13px;
+    gap: 12px;
+    max-width: 634px;
+    min-width: 349px;
+    width: auto;
+}
+.menu_SDD h2
+{
+    font-size: 16px;
+    font-weight: 300;
+    padding-top: 40px;
+}
+.menu_SDD h3
+{
+    font-size: 15px;
+    font-weight: 500;
+}
+.menu_SDD p
+{
+    font-size: 12px;
+}
+.dishes_card
+{
+    background-color: white;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 17px;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+}
+.dishes_card__content
+{
+    display: flex;
+}
+.dishes_card_bottom
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.div_checkout_button
+{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.checkout_button
+{
+    width: 186px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+footer
+{
+    background-color: #353535;
+}
+footer img
+{
+    width: 137px;
+    height: 27px;
+    color: white;
+}
+.link_footer
+{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 25px;
+    padding-top: 22px;
+    padding-bottom: 23px;
+}
+.link_footer i
+{
+    padding-right: 11px;
+    width: 11px;
+}
+@media screen and (min-width:1025px)
+{
+    .link_footer
+    {
+        display: flex;
+       flex-direction: row-reverse;
+        align-items: center;
+        gap: 71px;
+        padding-right: 114px;
+    }
+    .div_link_footer
+    {
+        display: flex;
+        justify-content: end;
+        flex-direction: row;
+        gap: 40px;
+    }
+}
+@media screen and (min-width:768px)
+{
+    .menu_SDD 
+    {
+        width: 634px;
+    }
+    .dishes_card
+    {
+        width: 100%;
+    }
+}

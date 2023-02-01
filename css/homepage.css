@@ -1,0 +1,284 @@
+body
+{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+header
+{
+
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+.div_logo_ohmyfood
+{
+    height: 63px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+.div_logo_ohmyfood img
+{
+    width: 172px;
+    height: 44px;
+    align-self: center;
+}
+.div_localisation
+{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 17px;
+    background-color: #EAEAEA;
+}
+.section_discovery_reservation
+{
+    height: 287px;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F6F6F6;
+    padding-left: 34px;
+    padding-right: 34px;
+    font-size: 12px;
+
+}
+.title_section_discovery_reservation
+{
+    width: 100%;
+    text-align: center;
+}
+.title_section_discovery_reservation h1
+{
+    font-weight: 700;
+    font-size: 24px;
+}
+.title_section_discovery_reservation h2
+{
+    font-weight: 300;
+    font-size: 18px;
+}
+.section_discovery_reservation button
+{
+    border-radius: 25px;
+    height: 50px;
+    width: 218px;
+    font-size: 16px;
+    font-weight: 500;
+    background: linear-gradient(180deg, rgba(255,121,218,1) 50%, rgba(147,86,220,1) 100%);
+    color: white;
+    border: none;
+}
+.section_operating
+{
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: start;
+}
+.div_section_operating
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.div_section_operating_button
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+.card
+{
+    display: flex;
+    align-items: center;
+}
+.round_parent
+{
+    position: absolute;
+    z-index: 1;
+}
+.round
+{
+    display: flex;
+    justify-content: center;
+    height: 24px;
+    width: 24px;
+    border-radius: 50px;
+    background-color: #9356DC;
+    color: white;
+
+}
+.button
+{
+    width: 322px;
+    height: 72px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 27px;
+    border: none;
+    box-shadow: 5px 5px 5px #ededed;
+    position: relative;
+}
+.tasting_button
+{
+    background-color: #F5EDFF;
+}
+.div_section_operating_butto i
+{
+    color: #7E7E7E;
+}
+.degustation_button
+{
+    background-color: #F5EDFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 27px;
+    width: 322px;
+    height: 72px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    box-shadow: 5px 5px 5px #ededed;
+    position: relative;
+}
+.section_restaurants
+{
+    background-color: #F6F6F6;
+}
+.div_article_restaurant
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F6F6F6;
+    gap: 25px;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-bottom: 64px;
+}
+.section_restaurants h1
+{
+   padding-left: 20px;
+}
+.article_restaurant
+{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #ededed;
+    width: 100%;
+}
+.article_restaurant img
+{
+    object-fit: cover;
+    height: 231px;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.restaurant_titles
+{
+    padding-left: 12px;
+}
+footer
+{
+    background-color: #353535;
+}
+footer img
+{
+    width: 137px;
+    height: 27px;
+    color: white;
+}
+.link_footer
+{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 25px;
+    padding-top: 22px;
+    padding-bottom: 23px;
+}
+.link_footer i
+{
+    padding-right: 11px;
+    width: 11px;
+}
+@media screen and (min-width:1025px)
+{
+    header
+    {
+        width: 1024px;
+        margin: 0 auto;
+    }
+    main 
+    {
+        width: 1024px;
+        margin: 0 auto;
+    }
+    .title_section_discovery_reservation
+    {
+        padding-bottom: 18px;
+    }
+    .section_operating
+    {
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        height: 262px;
+    }
+    .div_section_operating_button
+    {
+        flex-direction: row;
+    }
+    .section_restaurants
+    {
+        padding-top: 47px;
+    }
+    .div_article_restaurant
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    .link_footer
+    {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 71px;
+        padding-right: 114px;
+    }
+    .div_link_footer
+    {
+        display: flex;
+        justify-content: end;
+        flex-direction: row;
+        gap: 40px;
+    }
+    footer 
+    {
+        width: 1024px;
+        margin: 0 auto;
+    }
+}
