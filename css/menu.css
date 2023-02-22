@@ -1,4 +1,11 @@
-
+h3
+{
+    margin: 0px;
+}
+p
+{
+    margin: 0px;
+}
 .div_restaurant_profile_photo
 {
     width: 100%;
@@ -17,8 +24,6 @@ main
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1024px;
-    margin: 0 auto;
 }
 .restaurant_title
 {
@@ -53,33 +58,67 @@ main
     font-weight: 300;
     padding-top: 40px;
 }
-.menu_SDD h3
+.menu_SDD h3 
+{
+    font-size: 18px;
+    font-weight: 600;
+}
+.menu_SDD p 
 {
     font-size: 15px;
-    font-weight: 500;
-}
-.menu_SDD p
-{
-    font-size: 12px;
+    font-weight: 300;
 }
 .dishes_card
 {
     background-color: white;
     border-radius: 15px;
-    padding-left: 10px;
-    padding-right: 17px;
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
-}
-.dishes_card__content
-{
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow: hidden;
+    height: 68px;
+    min-width: 349px;
 }
-.dishes_card_bottom
+.dishes_card:hover .dishes_card_check_icon
+{
+    margin-right: 0%;
+}
+.dishes_card_entitled
+{
+    width: 90%;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+.dishes_card_entitled_bottom
 {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
+    padding-right: 10px;
+}
+.dishes_card_check_icon
+{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #99E2D0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-right: -10%;
+    transition: all 0.5s;
+}
+.dishes_card_check_icon i
+{
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
 }
 .div_checkout_button
 {

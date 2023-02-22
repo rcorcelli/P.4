@@ -80,6 +80,8 @@ a
 .section_operating
 {
     height: 440px;
+    min-width: 300px;
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -201,6 +203,37 @@ a
 {
     padding-left: 12px;
 }
+.article_restaurant_bottom
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.heart_icon i:hover
+{
+    background: linear-gradient(225deg, #9356dc, #ff79da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.full
+{
+    position: relative;
+    opacity: 0;
+}
+.empty 
+{
+    position: absolute;
+    background-color:white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: white;
+    opacity: 1;
+}
+.empty:hover 
+{
+    opacity: 0;
+}
+
 footer
 {
     background-color: #353535;
@@ -234,7 +267,7 @@ footer img
     }
     main 
     {
-        width: 1024px;
+        max-width: 1024px;
         margin: 0 auto;
     }
     .title_section_discovery_reservation
