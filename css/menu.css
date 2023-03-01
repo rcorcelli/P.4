@@ -6,6 +6,91 @@ p
 {
     margin: 0px;
 }
+.starter{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: white;
+    animation: starter 4s linear both;
+
+}
+@keyframes starter{
+    0%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.loader
+{
+    margin:auto;
+    margin-top: 180px;
+    margin-bottom: 180px;
+    height: 120px;
+    width: 120px;
+    border: 16px solid #9b6adb;
+    border-top-color: #3e255e;
+    border-bottom-color: #3e255e;
+    border-radius: 50%;
+    animation: chargeur 4s linear infinite;
+}
+
+@keyframes chargeur{
+    0%{
+        transform: rotate(0deg) scale(1);
+        border-top-color: #3e255e;
+        border-bottom-color: #9356DC
+    }
+    25%{
+        border-top-color: #9356DC;
+        border-bottom-color: #3e255e; 
+    }
+    50%{
+        transform: rotate(360deg) scale(1.15);
+        border-top-color: #3e255e;
+        border-bottom-color: #9356DC;
+    }
+    75%{
+        border-top-color: #9356DC;
+        border-bottom-color: #3e255e;
+    }
+    95%{
+        transform: rotate(720deg) scale(1);
+        border-top-color: #3e255e;
+        border-bottom-color: #9356DC;
+    }
+    100%{
+        opacity: 0;
+    }
+
+}
+.header_top
+{
+    display: flex;
+    flex-direction: row;
+    padding-top: 21px;
+    padding-bottom: 20px;
+}
+.arrow_back_logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.div_logo_ohmyfood img
+{
+    width: 196px;
+    align-self: center;
+    object-fit: contain;
+}
 .div_restaurant_profile_photo
 {
     width: 100%;
@@ -85,6 +170,19 @@ main
 .dishes_card:hover .dishes_card_check_icon
 {
     margin-right: 0%;
+}
+.dishes_card:hover .dishes_card_check_icon i
+{
+    animation: icon_check 0.5s;
+}
+@keyframes icon_check{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+
+    }
 }
 .dishes_card_entitled
 {
