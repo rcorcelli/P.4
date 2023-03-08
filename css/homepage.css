@@ -1,3 +1,111 @@
+.starter{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: white;
+    animation: starter 4s linear both;
+}
+@keyframes starter{
+    0%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.loader
+{
+    margin:auto;
+    margin-top: 180px;
+    margin-bottom: 180px;
+    height: 120px;
+    width: 120px;
+    border: 16px solid #9b6adb;
+    border-top-color: #3e255e;
+    border-bottom-color: #3e255e;
+    border-radius: 50%;
+    animation: chargeur 4s linear infinite;
+}
+
+@keyframes chargeur{
+    0%{
+        transform: rotate(0deg) scale(1);
+        border-top-color: #3e255e;
+        border-bottom-color: #9356DC
+    }
+    25%{
+        border-top-color: #9356DC;
+        border-bottom-color: #3e255e; 
+    }
+    50%{
+        transform: rotate(360deg) scale(1.15);
+        border-top-color: #3e255e;
+        border-bottom-color: #9356DC;
+    }
+    75%{
+        border-top-color: #9356DC;
+        border-bottom-color: #3e255e;
+    }
+    95%{
+        transform: rotate(720deg) scale(1);
+        border-top-color: #3e255e;
+        border-bottom-color: #9356DC;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.menu_SDD_OP_1{
+    animation: menu_SDD_OP_1 5s linear both;
+}
+.menu_SDD_OP_2{
+    animation: menu_SDD_OP_2 5s linear both;
+}
+.menu_SDD_OP_3{
+    animation: menu_SDD_OP_3 5s linear both;
+}
+@keyframes menu_SDD_OP_1{
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 0;
+    }
+    33%{
+        opacity: 1;
+    }
+}
+@keyframes menu_SDD_OP_2{
+    0%{
+        opacity: 0;
+    }
+    33%{
+        opacity: 0;
+    }
+    66%{
+        opacity: 1;
+    }
+}
+@keyframes menu_SDD_OP_3{
+    0%{
+        opacity: 0;
+    }
+    33%{
+        opacity: 0;
+    }
+    66%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 body
 {
     margin: 0;
@@ -202,12 +310,32 @@ a
 .restaurant_titles
 {
     padding-left: 12px;
+    display: flex;
+    flex-direction: row;
+}
+.restaurant_title_top
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1px;
+}
+.restaurant_titles_bottom
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .article_restaurant_bottom
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+}
+.heart_icon
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .heart_icon i:hover
 {
@@ -223,7 +351,7 @@ a
 .empty 
 {
     position: absolute;
-    background-color:white;
+    background-color:rgb(0, 0, 0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: white;

@@ -69,7 +69,51 @@ p
     100%{
         opacity: 0;
     }
-
+}
+.menu_SDD_OP_1{
+    animation: menu_SDD_OP_1 5s linear both;
+}
+.menu_SDD_OP_2{
+    animation: menu_SDD_OP_2 5s linear both;
+}
+.menu_SDD_OP_3{
+    animation: menu_SDD_OP_3 5s linear both;
+}
+@keyframes menu_SDD_OP_1{
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 0;
+    }
+    33%{
+        opacity: 1;
+    }
+}
+@keyframes menu_SDD_OP_2{
+    0%{
+        opacity: 0;
+    }
+    33%{
+        opacity: 0;
+    }
+    66%{
+        opacity: 1;
+    }
+}
+@keyframes menu_SDD_OP_3{
+    0%{
+        opacity: 0;
+    }
+    33%{
+        opacity: 0;
+    }
+    66%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .header_top
 {
