@@ -1,3 +1,7 @@
+h4, h5
+{
+    margin: 0;
+}
 .starter{
     height: 100%;
     width: 100%;
@@ -6,17 +10,20 @@
     left: 0;
     position: fixed;
     background-color: white;
-    animation: starter 4s linear both;
+    animation: starter 4s linear both; 
+    z-index: 5;
 }
 @keyframes starter{
     0%{
         opacity: 1;
     }
-    90%{
+    99%{
         opacity: 1;
+        z-index: 5;
     }
     100%{
         opacity: 0;
+        z-index: -99;
     }
 }
 .loader
@@ -224,6 +231,7 @@ a
 {
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 24px;
     width: 24px;
     border-radius: 50px;
@@ -246,7 +254,6 @@ a
     gap: 0px 27px;
     border: none;
     box-shadow: 5px 5px 5px #ededed;
-    position: relative;
 }
 .tasting_button
 {
@@ -297,7 +304,6 @@ a
     background-color: white;
     border-radius: 15px;
     box-shadow: 5px 5px 5px #ededed;
-    width: 100%;
 }
 .article_restaurant img
 {
@@ -312,6 +318,11 @@ a
     padding-left: 12px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding-right: 15px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    gap: 5px;
 }
 .restaurant_title_top
 {
@@ -328,8 +339,7 @@ a
 }
 .article_restaurant_bottom
 {
-    display: flex;
-    flex-direction: row;
+    
 }
 .heart_icon
 {
@@ -348,20 +358,20 @@ a
     position: relative;
     opacity: 0;
 }
+.full:hover
+{
+    opacity: 1;
+    transition: all 0,5 ease-out;
+}
 .empty 
 {
     position: absolute;
-    background-color:rgb(0, 0, 0);
+    background-color:black;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: white;
     opacity: 1;
 }
-.empty:hover 
-{
-    opacity: 0;
-}
-
 footer
 {
     background-color: #353535;
@@ -386,7 +396,7 @@ footer img
     padding-right: 11px;
     width: 11px;
 }
-@media screen and (min-width:1025px)
+@media screen and (min-width:768px)
 {
     header
     {
@@ -420,15 +430,19 @@ footer img
     .div_article_restaurant
     {
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .article_restaurant{
+        min-width: 490px;
     }
     .link_footer
     {
         display: flex;
         flex-direction: row-reverse;
+        justify-content: flex-start;
         align-items: center;
         gap: 71px;
-        padding-right: 114px;
+        padding-right: 50px;
     }
     .div_link_footer
     {
@@ -436,10 +450,14 @@ footer img
         justify-content: end;
         flex-direction: row;
         gap: 40px;
+        font-size: 10px;
     }
     footer 
     {
         width: 1024px;
         margin: 0 auto;
+    }
+    footer img{
+        color: white;
     }
 }
