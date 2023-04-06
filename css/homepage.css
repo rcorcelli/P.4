@@ -68,66 +68,23 @@ h4, h5
         opacity: 0;
     }
 }
-.menu_SDD_OP_1{
-    animation: menu_SDD_OP_1 5s linear both;
-}
-.menu_SDD_OP_2{
-    animation: menu_SDD_OP_2 5s linear both;
-}
-.menu_SDD_OP_3{
-    animation: menu_SDD_OP_3 5s linear both;
-}
-@keyframes menu_SDD_OP_1{
-    0%{
-        opacity: 0;
-    }
-    10%{
-        opacity: 0;
-    }
-    33%{
-        opacity: 1;
-    }
-}
-@keyframes menu_SDD_OP_2{
-    0%{
-        opacity: 0;
-    }
-    33%{
-        opacity: 0;
-    }
-    66%{
-        opacity: 1;
-    }
-}
-@keyframes menu_SDD_OP_3{
-    0%{
-        opacity: 0;
-    }
-    33%{
-        opacity: 0;
-    }
-    66%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
+header{
+    width: 100%;
 }
 body
 {
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
-header
-{
-
+main{
+    width: 100%;
 }
 a
 {
     text-decoration: none;
     color: black;
 }
-.div_logo_ohmyfood
+.container_logo_ohmyfood
 {
     height: 63px;
     width: 100%;
@@ -135,7 +92,7 @@ a
     justify-content: center;
     vertical-align: middle;
 }
-.div_logo_ohmyfood img
+.container_logo_ohmyfood img
 {
     width: 196px;
     align-self: center;
@@ -155,13 +112,13 @@ a
 .section_discovery_reservation
 {
     height: 287px;
+    width: 100%;
     display: flex;
     justify-content: center;
     vertical-align: middle;
     align-items: center;
     flex-direction: column;
     background-color: #F6F6F6;
-    padding-left: 34px;
     padding-right: 34px;
     font-size: 12px;
 
@@ -222,10 +179,15 @@ a
     display: flex;
     align-items: center;
 }
+.store{
+    color: #9356DC;
+}
 .round_parent
 {
     position: absolute;
     z-index: 1;
+    padding-right: 20px;
+    margin-left: -12px;
 }
 .round
 {
@@ -284,6 +246,12 @@ a
 {
     background-color: #F6F6F6;
 }
+.title_and_card{
+    flex-direction: column;
+}
+.title{
+    min-width: 490px;
+}
 .div_article_restaurant
 {
     display: flex;
@@ -304,6 +272,7 @@ a
     background-color: white;
     border-radius: 15px;
     box-shadow: 5px 5px 5px #ededed;
+    width: 100%;
 }
 .article_restaurant img
 {
@@ -336,10 +305,6 @@ a
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.article_restaurant_bottom
-{
-    
 }
 .heart_icon
 {
@@ -375,12 +340,21 @@ a
 footer
 {
     background-color: #353535;
+    width: 100%;
 }
 footer img
 {
     width: 137px;
     height: 27px;
     color: white;
+}
+.logo_omyfood{
+    font-size: 22px;
+    font-weight: 700;
+    font-family: shirkland;
+    font-style: italic;
+    color: white;
+    padding-bottom: 8px;
 }
 .link_footer
 {
@@ -396,16 +370,14 @@ footer img
     padding-right: 11px;
     width: 11px;
 }
-@media screen and (min-width:768px)
+@media screen and (min-width:1024px)
 {
     header
     {
-        width: 1024px;
         margin: 0 auto;
     }
     main 
     {
-        max-width: 1024px;
         margin: 0 auto;
     }
     .title_section_discovery_reservation
@@ -426,14 +398,30 @@ footer img
     .section_restaurants
     {
         padding-top: 47px;
+        display: flex;
+        justify-content: center;
+    }
+    .title_and_card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        max-width: 1200px;
+    }
+    .title{
+        width: 100%;
+        max-width: 1200px;
     }
     .div_article_restaurant
     {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
     }
     .article_restaurant{
         min-width: 490px;
+        max-width: 490px;
     }
     .link_footer
     {
@@ -444,17 +432,16 @@ footer img
         gap: 71px;
         padding-right: 50px;
     }
-    .div_link_footer
+    .link_omyfood_container
     {
         display: flex;
         justify-content: end;
         flex-direction: row;
         gap: 40px;
-        font-size: 10px;
+        font-size: 16px;
     }
     footer 
     {
-        width: 1024px;
         margin: 0 auto;
     }
     footer img{

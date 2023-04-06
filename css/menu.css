@@ -1,3 +1,6 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
 h3
 {
     margin: 0px;
@@ -5,70 +8,6 @@ h3
 p
 {
     margin: 0px;
-}
-.starter{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background-color: white;
-    animation: starter 4s linear both;
-
-}
-@keyframes starter{
-    0%{
-        opacity: 1;
-    }
-    90%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-    }
-}
-.loader
-{
-    margin:auto;
-    margin-top: 180px;
-    margin-bottom: 180px;
-    height: 120px;
-    width: 120px;
-    border: 16px solid #9b6adb;
-    border-top-color: #3e255e;
-    border-bottom-color: #3e255e;
-    border-radius: 50%;
-    animation: chargeur 4s linear infinite;
-}
-
-@keyframes chargeur{
-    0%{
-        transform: rotate(0deg) scale(1);
-        border-top-color: #3e255e;
-        border-bottom-color: #9356DC
-    }
-    25%{
-        border-top-color: #9356DC;
-        border-bottom-color: #3e255e; 
-    }
-    50%{
-        transform: rotate(360deg) scale(1.15);
-        border-top-color: #3e255e;
-        border-bottom-color: #9356DC;
-    }
-    75%{
-        border-top-color: #9356DC;
-        border-bottom-color: #3e255e;
-    }
-    95%{
-        transform: rotate(720deg) scale(1);
-        border-top-color: #3e255e;
-        border-bottom-color: #9356DC;
-    }
-    100%{
-        opacity: 0;
-    }
 }
 .menu_SDD_OP_1{
     animation: menu_SDD_OP_1 5s linear both;
@@ -127,14 +66,27 @@ p
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
 }
+.arrow_container{
+    height: auto;
+    width: 5%;
+}
 .arrow{
-    align-items: flex-start;
+    height: auto;
+    width: 20px;
+    padding-left: 23px;
+}
+.logo_menu_container{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    padding-right: 20px;
 }
 .logo_menu{
-    align-self: center;
+    height: auto;
+    width: 196px;
 }
 .div_logo_ohmyfood img
 {
@@ -160,6 +112,9 @@ main
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: -35px;
+    z-index: 2;
+    position: relative;
 }
 .restaurant_title
 {
@@ -287,16 +242,19 @@ main
     background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
     border: none;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
 }
 footer
 {
     background-color: #353535;
 }
-footer img
-{
-    width: 137px;
-    height: 27px;
+.logo_ohmyfood{
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Shrikhand', cursive;
+    font-style: italic;
     color: white;
+    padding-bottom: 8px;
 }
 .link_footer
 {
@@ -312,6 +270,11 @@ footer img
     padding-right: 11px;
     width: 11px;
 }
+.link_ohmyfood_container{
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+}
 @media screen and (min-width:1025px)
 {
     .link_footer
@@ -322,7 +285,7 @@ footer img
         gap: 71px;
         padding-right: 114px;
     }
-    .div_link_footer
+    .link_omyfood_container
     {
         display: flex;
         justify-content: end;

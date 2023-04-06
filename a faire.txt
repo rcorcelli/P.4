@@ -1,4 +1,1 @@
-animation check
-transitionchaque menu qui arrive a un delais different
-loader page acceuil
-regarder guide etape clefs
+header menu - apparais des le debut, fondu a faire?

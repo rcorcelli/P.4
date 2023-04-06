@@ -4,8 +4,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="./css/menu.css">
-        <link rel="stylesheet" type="text/css" href="./css/homepage.css">
         <script src="https://kit.fontawesome.com/8ac66ce7a2.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
         <title>Menu - Le délice des sens</title>
     </head>
     <body>
@@ -15,16 +17,21 @@
         <header>
             <div class="header_top">
                 <div class="arrow_back_logo">
-                    <a href="homepage.html">
-                        <i class="fa-solid fa-arrow-left"></i>
-                    </a>
-                    <img 
+                    <div class="arrow_container">
+                        <a class="arrow" href="homepage.html">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </a>
+                    </div>
+                    <div class="logo_menu_container">
+                        <img
+                        class="logo_menu" 
                         src="Images et textes Ohmyfood/images/logo/ohmyfood.png"
                         alt="logo ohmyfood">
+                    </div>
                 </div>
             </div>
             <div class="div_restaurant_profile_photo">
-                <img vv
+                <img 
                     src="./Images%20et%20textes%20Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
                     alt="a_la_française">
             </div>
@@ -228,9 +235,7 @@
         </main>
         <footer>
             <div class="link_footer">
-                <img 
-                    src="Images%20et%20textes%20Ohmyfood/images/logo/ohmyfood@2x.svg"
-                    alt="logo ohmyfood">
+                <h5 class="logo_ohmyfood">ohmyfood</h5>
                 <div class="div_link_footer">
                     <h4><i class="fa-solid fa-utensils"></i>proposer un restaurant</h4>
                     <h4><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</h4>
