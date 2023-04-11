@@ -246,6 +246,14 @@ a
 {
     background-color: #F6F6F6;
 }
+.section_restaurants h4{
+    font-weight: 700;
+    font-size: 18px;
+}
+.section_restaurants h5{
+    font-weight: 300;
+    font-size: 17px;
+}
 .title_and_card{
     flex-direction: column;
 }
